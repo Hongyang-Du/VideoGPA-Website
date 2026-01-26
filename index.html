@@ -1,520 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
-  <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
-  <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
-    "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
-    ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoGPA | Visual Quality & Optimization Framework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .hero-bg { background: radial-gradient(circle at top right, #1e293b, #0f172a); }
+        .toc-link:hover { color: #3b82f6; background: #eff6ff; }
+        .toc-active { color: #3b82f6; border-right: 3px solid #3b82f6; font-weight: 600; }
+        #back-to-top { opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+        #back-to-top.show { opacity: 1; pointer-events: auto; }
+        .video-card { transition: all 0.4s ease; border: 1px solid #f1f5f9; background: white; }
+        .video-card:hover { transform: translateY(-4px); box-shadow: 0 30px 50px -15px rgba(0,0,0,0.08); }
+        .tab-btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .tab-active { background: #3b82f6; color: white; box-shadow: 0 8px 20px -4px rgba(59, 130, 246, 0.4); }
+        .md-analysis { line-height: 1.8; }
+        .md-analysis strong { color: #1e293b; font-weight: 700; }
+    </style>
 </head>
-<body>
+<body class="bg-[#fafbfc] text-slate-800">
 
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-xl z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-2xl text-slate-900 tracking-tighter flex items-center">
+                <span class="bg-blue-600 text-white px-2 py-0.5 rounded-lg mr-2 text-xl shadow-lg shadow-blue-500/20">V</span>VideoGPA
+            </a>
+            <div class="hidden md:flex space-x-6 text-sm font-bold uppercase tracking-widest text-slate-400">
+                <a href="#abstract" class="hover:text-blue-600 transition">Abstract</a>
+                <a href="#gallery" class="hover:text-blue-600 transition text-blue-600">Gallery</a>
+                <a href="https://github.com/Hongyang-Du/VideoGPA" target="_blank" class="hover:text-blue-600 transition"><i class="fab fa-github text-xl"></i></a>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </nav>
 
+    <aside class="hidden xl:block fixed right-12 top-1/4 w-48 z-40 border-l border-slate-100 pl-6 space-y-4">
+        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">On This Page</p>
+        <a href="#abstract" class="toc-link block py-1 text-sm text-slate-500 transition-all">Abstract</a>
+        <a href="#metrics" class="toc-link block py-1 text-sm text-slate-500 transition-all">Benchmarks</a>
+        <a href="#gallery" class="toc-link block py-1 text-sm text-slate-500 transition-all">Visual Gallery</a>
+        <a href="#usage" class="toc-link block py-1 text-sm text-slate-500 transition-all">Usage Guide</a>
+    </aside>
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+    <header class="relative hero-bg text-white pt-64 pb-24 px-6 overflow-hidden">
+        <div class="absolute top-1/4 -left-20 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+        <div class="relative max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter italic bg-clip-text text-transparent bg-gradient-to-b from-white via-slate-200 to-slate-500">
+                VideoGPA
+            </h1>
+            <p id="hero-desc" class="text-2xl md:text-3xl text-blue-100/80 mb-14 font-light max-w-3xl mx-auto leading-tight tracking-tight">
+                Distilling Geometry Priors for **3D-Consistent** Video Generation
+            </p>
+            
+            <div class="max-w-4xl mx-auto mb-10">
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-lg font-semibold text-slate-100">
+                    <a href="#" class="author-link text-white">Hongyang Du<sup>*1,2</sup></a>
+                    <a href="#" class="author-link text-white">Junjie Ye<sup>*1</sup></a>
+                    <a href="#" class="author-link text-white">Xiaoyan Cong<sup>*2</sup></a>
+                    <a href="#" class="author-link text-white">Runhao Li<sup>1</sup></a>
+                    <a href="#" class="author-link text-white">Jingcheng Ni<sup>2</sup></a>
+                </div>
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 mt-4 text-lg font-semibold text-slate-100">
+                    <a href="#" class="author-link text-white">Aman Agarwal<sup>2</sup></a>
+                    <a href="#" class="author-link text-white">Zeqi Zhou<sup>2</sup></a>
+                    <a href="#" class="author-link text-white">Zekun Li<sup>2</sup></a>
+                    <a href="#" class="author-link text-white">Randall Balestriero<sup>2</sup></a>
+                    <a href="#" class="author-link text-white text-blue-300">Yue Wang<sup>1</sup></a>
+                </div>
+                <div class="mt-6 text-sm text-slate-400 space-y-1">
+                    <p><sup>1</sup> Physical SuperIntelligence Lab, University of Southern California</p>
+                    <p><sup>2</sup> Department of Computer Science, Brown University</p>
+                    <p class="pt-2 italic text-slate-500">* Equal Contribution</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-6">
+                <a href="https://github.com/Hongyang-Du/VideoGPA" class="group relative bg-slate-800 hover:bg-slate-700 text-white px-10 py-4 rounded-2xl font-bold transition-all shadow-2xl flex items-center transform hover:-translate-y-1">
+                    <i class="fab fa-github mr-3 text-2xl group-hover:scale-110 transition-transform"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="javascript:void(0)" class="group relative bg-[#B31B1B] hover:bg-[#901515] text-white px-10 py-4 rounded-2xl font-bold transition-all shadow-2xl flex items-center transform hover:-translate-y-1">
+                    <i class="fas fa-file-pdf mr-3 text-2xl group-hover:scale-110 transition-transform"></i>
+                    <span>ArXiv Paper</span>
+                </a>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </header>
 
+    <main class="max-w-4xl mx-auto px-6 py-24">
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
+        <section id="abstract" class="mb-40 scroll-mt-24">
+            <div class="bg-white border border-slate-100 p-12 md:p-20 rounded-[3rem] shadow-sm relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-blue-50 rounded-full -mr-24 -mt-24 blur-3xl opacity-60"></div>
+                <h2 class="text-xs font-bold text-blue-600 uppercase tracking-[0.4em] mb-10">Abstract</h2>
+                <div id="md-abstract" class="text-xl md:text-2xl text-slate-700 leading-relaxed font-medium italic">
+                    While recent **video diffusion models** (VDMs) produce visually impressive results, they fundamentally struggle to maintain 3D structural consistency, often resulting in object deformation or spatial drift. We hypothesize that these failures arise because standard denoising objectives lack explicit incentives for geometric coherence. To address this, we introduce **VideoGPA** (Video Geometric Preference Alignment), a data-efficient framework that leverages geometric preference pairs to guide VDMs via Direct Preference Optimization (**DPO**). To construct these pairs, we leverage priors from a geometry foundation model to formulate a novel 3D consistency metric, enabling the quantitative evaluation of generated videos. This approach effectively steers the generative distribution toward inherent 3D consistency without requiring human annotations. VideoGPA significantly enhances 3D consistency, temporal stability, and motion coherence using only **2,000** preference pairs, consistently outperforming state-of-the-art baselines in extensive experiments.
+                </div>
+            </section>
         
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+        <section id="metrics" class="mb-40 scroll-mt-24">
+            <div class="mb-12">
+                <h2 class="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Quantitative Benchmarks</h2>
+                <p class="text-slate-500">Comprehensive results on 3D Reconstruction Error, Consistency, and Win Rates.</p>
+            </div>
+            
+            <div class="bg-white rounded-[2.5rem] border border-slate-100 shadow-sm overflow-x-auto p-4">
+                <table class="w-full text-left text-xs md:text-sm border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50 border-b border-slate-100 uppercase tracking-widest font-bold text-slate-500">
+                            <th class="p-4" rowspan="2">Method</th>
+                            <th class="p-4 text-center border-l border-slate-200" colspan="3">3D Reconstruction Error</th>
+                            <th class="p-4 text-center border-l border-slate-200" colspan="3">3D Consistency</th>
+                            <th class="p-4 text-center border-l border-slate-200" colspan="4">VideoReward (Win Rate %)</th>
+                        </tr>
+                        <tr class="bg-slate-50 border-b border-slate-100 text-[10px] text-slate-400">
+                            <th class="p-2 text-center border-l border-slate-200">PSNR ↑</th><th class="p-2 text-center">SSIM ↑</th><th class="p-2 text-center">LPIPS ↓</th>
+                            <th class="p-2 text-center border-l border-slate-200">MVCS ↑</th><th class="p-2 text-center">3DCS ↓</th><th class="p-2 text-center">Epipolar ↓</th>
+                            <th class="p-2 text-center border-l border-slate-200">VQ</th><th class="p-2 text-center">MQ</th><th class="p-2 text-center">TA</th><th class="p-2 text-center">OVL</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-50">
+                        <tr class="bg-slate-50/30 font-bold text-slate-400"><td colspan="11" class="p-4 uppercase tracking-tighter italic">Image-to-Video (I2V) Tasks</td></tr>
+                        <tr><td class="p-4">Baseline-I2V</td><td class="p-2 text-center">14.57</td><td class="p-2 text-center">0.455</td><td class="p-2 text-center">0.653</td><td class="p-2 text-center">0.976</td><td class="p-2 text-center">0.687</td><td class="p-2 text-center">0.706</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td></tr>
+                        <tr><td class="p-4">SFT</td><td class="p-2 text-center">15.23</td><td class="p-2 text-center">0.509</td><td class="p-2 text-center">0.639</td><td class="p-2 text-center">0.982</td><td class="p-2 text-center">0.665</td><td class="p-2 text-center">0.628</td><td class="p-2 text-center">44.67</td><td class="p-2 text-center">33.00</td><td class="p-2 text-center">52.67</td><td class="p-2 text-center">35.00</td></tr>
+                        <tr><td class="p-4">Epipolar-DPO</td><td class="p-2 text-center">15.07</td><td class="p-2 text-center">0.479</td><td class="p-2 text-center">0.615</td><td class="p-2 text-center">0.984</td><td class="p-2 text-center">0.646</td><td class="p-2 text-center">0.571</td><td class="p-2 text-center">67.33</td><td class="p-2 text-center">51.33</td><td class="p-2 text-center">56.67</td><td class="p-2 text-center">66.00</td></tr>
+                        <tr class="text-blue-600 font-bold bg-blue-50/20"><td class="p-4 font-black italic underline text-blue-800">VideoGPA (Ours)</td><td class="p-2 text-center">15.19</td><td class="p-2 text-center">0.510</td><td class="p-2 text-center">0.608</td><td class="p-2 text-center">0.986</td><td class="p-2 text-center">0.638</td><td class="p-2 text-center">0.564</td><td class="p-2 text-center">74.00</td><td class="p-2 text-center">56.00</td><td class="p-2 text-center">57.67</td><td class="p-2 text-center">76.00</td></tr>
+                        
+                        <tr class="bg-slate-50/30 font-bold text-slate-400 border-t-2 border-slate-200"><td colspan="11" class="p-4 uppercase tracking-tighter italic">Text-to-Video (T2V) Tasks</td></tr>
+                        <tr><td class="p-4">Baseline-T2V</td><td class="p-2 text-center">17.69</td><td class="p-2 text-center">0.618</td><td class="p-2 text-center">0.510</td><td class="p-2 text-center">0.971</td><td class="p-2 text-center">0.531</td><td class="p-2 text-center">0.586</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td></tr>
+                        <tr><td class="p-4">SFT</td><td class="p-2 text-center">17.07</td><td class="p-2 text-center">0.573</td><td class="p-2 text-center">0.563</td><td class="p-2 text-center">0.968</td><td class="p-2 text-center">0.586</td><td class="p-2 text-center">0.719</td><td class="p-2 text-center">14.67</td><td class="p-2 text-center">23.67</td><td class="p-2 text-center">39.33</td><td class="p-2 text-center">15.33</td></tr>
+                        <tr><td class="p-4">Epipolar-DPO</td><td class="p-2 text-center">17.60</td><td class="p-2 text-center">0.618</td><td class="p-2 text-center">0.511</td><td class="p-2 text-center">0.971</td><td class="p-2 text-center">0.531</td><td class="p-2 text-center">0.585</td><td class="p-2 text-center">32.67</td><td class="p-2 text-center">33.67</td><td class="p-2 text-center">33.33</td><td class="p-2 text-center">33.33</td></tr>
+                        <tr class="text-blue-600 font-bold bg-blue-50/20"><td class="p-4 font-black italic underline text-blue-800">VideoGPA (Ours)</td><td class="p-2 text-center">17.31</td><td class="p-2 text-center">0.621</td><td class="p-2 text-center">0.495</td><td class="p-2 text-center">0.974</td><td class="p-2 text-center">0.519</td><td class="p-2 text-center">0.548</td><td class="p-2 text-center">62.67</td><td class="p-2 text-center">67.00</td><td class="p-2 text-center">42.67</td><td class="p-2 text-center">60.33</td></tr>
+                        
+                        <tr class="bg-slate-50/30 font-bold text-slate-400 border-t-2 border-slate-200"><td colspan="11" class="p-4 uppercase tracking-tighter italic">Comparison with State-of-the-Art</td></tr>
+                        <tr><td class="p-4">Baseline-T2V15</td><td class="p-2 text-center">15.57</td><td class="p-2 text-center">0.480</td><td class="p-2 text-center">0.555</td><td class="p-2 text-center">0.976</td><td class="p-2 text-center">0.588</td><td class="p-2 text-center">0.685</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td></tr>
+                        <tr><td class="p-4">GeoVideo</td><td class="p-2 text-center">15.90</td><td class="p-2 text-center">0.510</td><td class="p-2 text-center">0.643</td><td class="p-2 text-center">0.852</td><td class="p-2 text-center">0.673</td><td class="p-2 text-center">0.840</td><td class="p-2 text-center">17.36</td><td class="p-2 text-center">44.44</td><td class="p-2 text-center">30.56</td><td class="p-2 text-center">18.06</td></tr>
+                        <tr class="text-blue-600 font-bold bg-blue-50/20"><td class="p-4 font-black italic underline text-blue-800">VideoGPA (Ours)</td><td class="p-2 text-center">14.88</td><td class="p-2 text-center">0.503</td><td class="p-2 text-center">0.520</td><td class="p-2 text-center">0.982</td><td class="p-2 text-center">0.556</td><td class="p-2 text-center">0.567</td><td class="p-2 text-center">60.42</td><td class="p-2 text-center">54.17</td><td class="p-2 text-center">52.08</td><td class="p-2 text-center">57.64</td></tr>
+                    </tbody>
+                </table>
+                <div class="mt-4 p-4 text-[10px] text-slate-400 italic">
+                    Note: 3DCS denotes our proposed 3D Consistency Score. VQ, MQ, TA, and OVL represent Visual Quality, Motion Quality, Text Alignment, and Overall, respectively. Filtered static videos as Training Stage.
+                </div>
+            </div>
+        </section>
 
+        <section id="gallery" class="mb-40 scroll-mt-24">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-extrabold text-slate-900 mb-8 tracking-tight italic">Result Gallery</h2>
+                <div class="inline-flex bg-slate-100 p-2 rounded-[1.5rem] border border-slate-200 overflow-x-auto max-w-full">
+                    <button onclick="switchCategory('i2v')" id="tab-i2v" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold tab-active">Dynamic Video (I2V)</button>
+                    <button onclick="switchCategory('t2v-dyn')" id="tab-t2v-dyn" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold text-slate-500">Dynamic Video (T2V)</button>
+                    <button onclick="switchCategory('t2v-static')" id="tab-t2v-static" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold text-slate-500">Static Scene (T2V)</button>
+                </div>
+            </div>
 
+            <div id="video-feed" class="space-y-24">
+                </div>
+        </section>
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
+        <section id="usage" class="mb-32 scroll-mt-24">
+            <h2 class="text-3xl font-bold mb-8 italic">Usage</h2>
+            <div class="bg-[#0d1117] rounded-3xl p-8 border border-slate-800 shadow-2xl group">
+                <pre class="text-blue-300 font-mono text-sm overflow-x-auto leading-relaxed">
+<span class="text-slate-500"># Run DPO training for T2V model</span>
+python train_dpo/CogVideoX-T2V-5B_lora/03_train.py
 
+<span class="text-slate-500"># Perform inference with LoRA adapter</span>
+python generate/t2v_inference.py "Prompt text" --lora_path checkpoints/VideoGPA-T2V-lora</pre>
+            </div>
+        </section>
 
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+        <section id="bibtex" class="scroll-mt-24 mb-32 text-slate-500">
+            <h2 class="text-3xl font-bold mb-8 italic text-slate-800">Citation</h2>
+            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm relative">
+                <pre id="bib-code" class="text-sm font-mono overflow-x-auto leading-loose italic">@article{du2026videogpa,
+  title={VideoGPA: Video Generation Quality Assessment and Optimization},
+  author={Du, Hongyang and others},
+  journal={GitHub Open Source Project},
+  year={2026}
+}</pre>
+                <button onclick="copyBib()" class="absolute bottom-6 right-8 px-6 py-2 bg-slate-900 text-white rounded-xl text-xs font-bold hover:bg-blue-600 transition shadow-xl">Copy BibTeX</button>
+            </div>
+        </section>
+    </main>
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+    <footer class="bg-white py-20 px-6 border-t border-slate-100 text-center text-slate-300 text-[10px] font-bold uppercase tracking-[0.5em]">
+        VideoGPA Research • 2026
+    </footer>
 
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    <button id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-10 right-10 w-12 h-12 bg-slate-900 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <script>
+        // Data for I2V Comparisons (Existing)
+        const i2vData = [
+            {
+                url: "https://github.com/user-attachments/assets/40bfebaf-365c-48f0-90dc-ee574228024a",
+                prompt: "Pirate-themed amusement rides in a serene outdoor park...",
+                desc: "The video features a series of pirate-themed amusement rides in an outdoor park setting, with each ride having unique names like 'Pirate Ship,' 'Pirate's Bay,' 'Pirate's Plunder,' 'Pirate's Cove,' 'Pirate's Revenge,' 'Pirate's Castle,' 'Pirate's Bay,' 'Pirate's Plunder,' 'Pirate's Castle,' and 'Pirate's Plunder.' The rides are adorned with vibrant colors, decorative elements, and safety signs, including a 'No Entry' sign and a 'Safety' sign. The surrounding area is lush with trees, and the atmosphere is serene, with no people present. The video captures the tranquil and still ambiance of the park."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/2a603254-6270-4ada-b330-5fcb87f7edbf",
+                prompt: "Modern glass building in urban setting surrounded by vehicles...",
+                desc: "The video features a modern glass building with a reflective facade, situated in an urban setting with a mix of older brick buildings. The building's entrance is marked by a sculpture and a sign, with a black SUV and other vehicles parked in front. As the video progresses, the building's surroundings are shown under a partly cloudy sky, with a red stop sign, blue trash bins, and a street lamp visible. The scene includes a black pickup truck, a silver sedan, and a red SUV parked in the foreground, with the building's entrance and a statue atop a cylindrical structure highlighted. The video concludes with a black SUV parked in front of the building, with a green street sign and a blue dumpster nearby."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/ded40c82-f320-47f6-86a8-bb4bfbb1df1e",
+                prompt: "Modern interior with marble staircase and science-themed displays...",
+                desc: "The video explores a modern building's interior, starting with a view of a staircase with dark marble walls and a colorful light installation. As the camera moves, it reveals various angles of the staircase, the surrounding walls, and the building's contemporary design, including a glass balustrade and a 'Science and Technology' sign. The focus shifts to a hallway with a 'Transforming Lives Through Chemistry' display, a white table, and a blue wall with a green sign. The video concludes with a view of a grand staircase leading to an upper level, with a 'EXIT' sign and a 'Parking Garage' sign visible."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/3c902166-97b0-4fe9-8330-001cdc4ab1e6",
+                prompt: "Residential AC maintenance and utility boxes in suburban Ohio...",
+                desc: "The video shows a series of residential scenes in Westerville, OH, focusing on the maintenance of air conditioning units and utility boxes. Initially, two gray air conditioners are seen on a concrete slab, connected to a white electrical box and a gas meter, with a well-kept lawn and a wooden fence in the background. As the video continues, the number of units increases to four, and the condition of the pipes and electrical boxes varies, indicating regular upkeep. A weathered white gas valve and a rusted red brick wall with a white electrical box are also featured, alongside a neatly trimmed bush and a parked car, suggesting a suburban setting."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/4c6dd7f2-bfb4-497d-b524-deb1453eb0c0",
+                prompt: "Vending machines and kiosks in a quiet airport terminal...",
+                desc: "The video features a series of vending machines in an airport terminal, including a colorful lottery machine, a FedEx self-service kiosk, and various other machines like a Pepsi vending machine and a UPS store. The machines are set against a backdrop of modern architecture with reflective floors, bright lighting, and signs indicating accessible restrooms and elevators. The area is quiet and well-lit, with no visible activity, suggesting a moment of stillness in a bustling transit space. The video captures the essence of a busy yet orderly airport environment."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/bef53ca6-88b2-4509-83f7-cc6a93c18cca",
+                prompt: "Tranquil Chinese gazebo in a park with winding brick pathway...",
+                desc: "A traditional Chinese-style wooden gazebo with a curved roof and ornate latticework is situated in a well-maintained park, surrounded by lush greenery and a winding brick pathway. The scene is tranquil, with a tennis court visible in the background, suggesting a recreational setting. As time passes, the gazebo remains a focal point, with the surrounding trees and the pathway leading to it. The lighting indicates it might be early morning or late afternoon. A modern trash bin with a red and black design appears, indicating an emphasis on cleanliness. The park is serene, with no people or animals present."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/7152d981-8af4-45ce-bd3e-1eb39ace2c9e",
+                prompt: "Serene urban park with autumnal trees and distant high-rise...",
+                desc: "The video features a tranquil park with a variety of trees, including a prominent magnolia and others with autumnal leaves, set against an overcast sky. The park is devoid of people and wildlife, creating a serene atmosphere. As time passes, the scene includes a young magnolia with reddish-brown leaves and a backdrop of leafless trees, suggesting a seasonal transition. The presence of a watermark 'bilibili' indicates the footage may be from a Chinese video platform. The video concludes with a view of a grassy field with trees showing signs of autumn, and a distant high-rise building, hinting at an urban park setting."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/79242745-b24e-400e-826e-cb1f2f933342",
+                prompt: "Vibrant video game store interior with collectibles and gaming posters...",
+                desc: "The video takes us through a vibrant video game store, starting with a view of the store's interior, showcasing DVDs, video games, and collectibles. As we move through the store, we see a variety of items including baseball caps, plush toys, and action figures, with clearance signs indicating sales. The store features a range of posters, including 'TRENDPOSTERS' and 'SUPERSTAR POSTERS', and a section dedicated to gaming accessories. The shelves are well-organized, displaying DVDs, Blu-rays, and video games, with a focus on the entertainment industry. The store's atmosphere is inviting, with a warm color palette and a sense of excitement for customers."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/0cd77642-065b-4998-9dab-8c7e6f215282",
+                prompt: "Outdoor dining area with black canopy and red cushioned chairs...",
+                desc: "The video features an outdoor dining area with a black metal truss canopy and greenery, set against a red wall with large windows reflecting the interior. Initially, the area is empty, with a red pickup truck parked outside. As time passes, the scene includes a red bench, a black table with chairs, and a high-top table with red cushioned chairs. The area is well-lit by pendant lights and natural light, with a 'NO ENTRY' sign and a 'CLOSED' sign indicating the establishment's status. The setting is tranquil, with a red pickup truck and a black car parked nearby, and a 'PARKING' sign suggests restrictions."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/3d4c87bf-edf9-4f86-90db-dabfac6efcb3",
+                prompt: "Well-organized warehouse with stocked shelves and industrial lighting...",
+                desc: "The video shows a warehouse with metal shelves initially empty, with a yellow 'Y' sign and a ladder suggesting recent activity. As time passes, the shelves are seen stocked with car batteries, and a hand truck appears, indicating ongoing work. The warehouse is well-lit, with a red wall and a pallet jack, but no workers are visible. The shelves are neatly organized, and a pallet jack is present, suggesting movement of goods. A black curtain partially conceals the shelves, and a red curtain adds a dramatic flair. The scene is quiet, with a few batteries and a pallet jack, and a red curtain partially veils the shelves, with a few batteries and a pallet jack, and a sign reading 'AUTO PARTS' in the background."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/cb02abbe-4bc3-4040-b131-2ec4bad92ecf",
+                prompt: "Monument to the People's Heroes in Beijing under sunlight...",
+                desc: "The video features the Monument to the People's Heroes in Beijing, China, under a clear blue sky. The monument, with its grey stone base and golden Chinese characters, is surrounded by a white railing and lush greenery. As the sun casts a soft glow, the scene remains tranquil and devoid of people, emphasizing the monument's solemnity and historical significance. The inscription on the monument's base changes slightly, indicating different eras or aspects of the monument's history. The serene atmosphere is maintained throughout, with the monument's grandeur highlighted by the sunlight."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/2ce897d7-cac5-416c-9fe7-05b7ec83fe47",
+                prompt: "Modern furniture store interior showcasing stylish sofas and decorative pieces...",
+                desc: "The video takes viewers through a furniture store, showcasing a variety of modern and stylish furniture pieces. Initially, a white sectional sofa with plush cushions is highlighted, surrounded by a dark wood coffee table and a shelving unit with decorative items. As the video continues, different sections of the store are featured, including a cream-colored sofa with a chaise lounge, a round wooden coffee table, and a shelving unit with vases and books. The store's ambiance is warm and inviting, with a focus on contemporary furniture and decorative elements like potted plants and abstract art. The video concludes with a display of a white ceramic pot with green succulents on a wooden stool, surrounded by other furniture pieces."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/32e1183b-33ca-482a-b2a4-9d9a75127fcf",
+                prompt: "Bronze statues of guardians and children in a tranquil park...",
+                desc: "The video features a series of bronze statues in a park, each depicting an adult and a child in various intimate moments, suggesting a theme of guardianship and learning. The statues are set against a backdrop of a wooden bridge, lush greenery, and a clear sky, with a pathway leading to the bridge. The scenes are tranquil, with no people present, and the soft lighting indicates it might be early morning or late afternoon. The presence of a logo in some frames hints at an association with a media outlet or organization."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/fc8c5b53-7697-4645-93f4-101eab465203",
+                prompt: "Modern urban sculpture in a quiet cityscape with maintenance equipment...",
+                desc: "The video features a serene urban setting with a red and black abstract sculpture on a concrete base, surrounded by modern buildings and a clear blue sky. As time passes, the scene includes a cherry picker, a 'Parkway' sign, and a 'Downtown' sign, suggesting maintenance or installation activities. The sculpture's dynamic design contrasts with the tranquil environment. A cherry picker lifts a street sign, and a 'Parkway' sign is visible. The cityscape is quiet, with no people, and a 'Chase' building is seen in the background. The video concludes with a 'PARK' sign and a 'Chase' building, with a cherry picker indicating maintenance work."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/9c75949c-1aeb-4239-8184-afb5ee09dfd4",
+                prompt: "Modern furniture store showcasing beds, living areas, and whimsical decor...",
+                desc: "The video takes place in a modern furniture store, showcasing a variety of beds with different headboards and mattresses, some wrapped in plastic. The store features a dining set, a kitchenette, and a living area, all under warm lighting. Decorative elements like abstract art, a pink flamingo sculpture, and a plush ostrich toy add whimsy. The store displays beds with blue and white branding, including 'OYO' and 'QUBO', and offers promotional materials. The ambiance is contemporary, with a color scheme of neutral tones and warm lighting, creating an inviting atmosphere for customers."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/8d8e83f6-70c2-4aeb-9787-207e3e2a418c",
+                prompt: "Indoor corridor with educational posters and blue floor stickers...",
+                desc: "The video takes place in a well-lit indoor corridor with a polished floor and high ceilings, adorned with potted plants and educational posters. A red banner with Chinese characters is visible, along with a bulletin board displaying information and photographs. The corridor is empty, with blue social distancing stickers on the floor and a sign indicating the entrance to a building. As the video continues, the corridor is shown with a large window, a door with a red sign, and a staircase. The walls feature colorful murals and a 'Welcome' sign, with a few individuals seen in the distance. The setting suggests a school or community space with a focus on safety and orderliness."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/1bbf5217-5feb-4b02-9264-8e502f37955d",
+                prompt: "Tranquil lakeside gazebo with lotus flowers and city skyline...",
+                desc: "The video features a tranquil lakeside scene with a wooden boardwalk leading to a gazebo, surrounded by lotus flowers and aquatic plants. The calm waters reflect the soft glow of the sun, either rising or setting, and the hazy skyline of a city with modern skyscrapers. The scene is serene, with no people or wildlife, and the lighting suggests it's either early morning or late afternoon. As time passes, the sky transitions from pale blue to warm orange, and the city's silhouette becomes more pronounced against the natural backdrop. The video captures the peaceful coexistence of nature and urban life."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/eec48773-bb0f-47a6-aab0-03989cf2fabb",
+                prompt: "Department store Halloween section with festive orange and black decor...",
+                desc: "The video takes us through a department store's Halloween section, showcasing a variety of festive decorations. Initially, the store is empty, but as we move through the aisles, we see Halloween-themed items like candles, ornaments, and kitchenware. The decorations are arranged on wooden tables and shelves, with a color scheme of black, orange, and white. Some items feature playful phrases like 'BOO', 'BOOZE', and 'HOME SWEET HALLOWEEN'. The store is well-lit, with a warm ambiance, and the decorations include ghost figures, pumpkins, and bats, creating a cozy, celebratory atmosphere."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/f399ec4c-6b8c-4e21-b6ba-b3562038749c",
+                prompt: "Industrial workshop featuring bus maintenance and hydraulic lifts...",
+                desc: "The video takes place in a well-lit industrial workshop with a focus on bus maintenance. Initially, a blue and white hydraulic lift is central, with a red banner and a bus under maintenance. The scene shifts to show the lift with a control panel, a red banner with Chinese characters, and a bus with a damaged front end. Various equipment like a manual pallet jack, a red fire extinguisher, and a wooden bench appear, indicating ongoing work. A technician is seen working on a bus, with tools and parts scattered around. The workshop is equipped with multiple lifts, a forklift, and a bus undergoing repair, with a red banner and a sign with Chinese characters visible. The video concludes with a still scene of the workshop, highlighting the bus and the mechanical equipment."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/2472430f-f2bb-4608-9b1f-03c141c5dc2b",
+                prompt: "Traditional Chinese tea room with elegant furniture and ceramic decor...",
+                desc: "The video features a serene and culturally rich setting, showcasing a traditional Chinese tea ceremony room with a polished wooden table, elegant chairs, and a shelving unit with ceramic vases and books. As time passes, the room is shown with various angles, highlighting the tea set, the bamboo runner, and the soft lighting that creates a tranquil atmosphere. Decorative elements like a potted plant, a small statue, and framed pictures add to the ambiance. The room's design, with its minimalist aesthetic and soft lighting, suggests a space for contemplation and cultural appreciation."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/ccc1f9ed-2971-4d73-b005-c14e5ec07e0d",
+                prompt: "Traditional Chinese museum featuring golden artifacts and historical dioramas...",
+                desc: "The video explores a traditional Chinese museum, starting with a display case of golden figurines and moving through various historical exhibits, including a lion statue, a model of an ancient Chinese city, and a human skeleton with tools. The museum features a high ceiling with wooden beams, stone columns, and bamboo wall panels, with soft lighting enhancing the cultural ambiance. Textual information in Chinese is visible, suggesting an educational purpose. The scenes transition from a serene, well-preserved interior to a more somber, reflective atmosphere with a display case of golden artifacts and a model of a historical battle scene, all under a warm glow."
+            },
+            {
+                url: "https://github.com/user-attachments/assets/96141bb4-5874-4101-8596-e5ce2a9d0b77",
+                prompt: "Well-organized warehouse with stocked shelves and industrial lighting...",
+                desc: "The video takes us through a well-lit warehouse filled with shelves stocked with various items. Initially, we see a red wall with metal shelves holding boxes, bags, and a ladder. As we move forward, the shelves display an assortment of goods including kitchen appliances, cleaning supplies, and automotive parts. The items are neatly organized, with some boxes labeled for specific products. A hand truck is visible, suggesting recent or upcoming activity. The warehouse is brightly lit, with fluorescent lights enhancing the visibility of the goods, which range from new to used, and are methodically arranged for easy access and identification."
+            }
+        ];
 
-    <!-- End of Statcounter Code -->
+        // Data for T2V Dynamic Comparisons (New Animal Set)
+        const t2vDynData = [
+            { url: "assets/dt2v/1.mp4", prompt: "A wasp with yellow and black markings is seen pollinating a dandelion flower amidst a lush meadow.", desc: "The scene unfolds under the bright midday sun, highlighting the vivid colors and intricate details of the wasp and flower. As time passes, the wasp continues its pollination efforts, with the background of green grass and other dandelions softly blurred." },
+            { url: "assets/dt2v/4.mp4", prompt: "A vibrant red fox with a bushy tail and sharp features is captured mid-leap in a snowy forest.", desc: "The fox's fur contrasts strikingly against the white snow. As the fox jumps gracefully, its agile movements are highlighted, showcasing its natural athleticism and adaptability." },
+            { url: "assets/dt2v/5.mp4", prompt: "Two seagulls are observed on a tranquil beach, engaging in various activities such as standing, walking, and foraging.", desc: "The scene is serene, with seagulls' white and grey feathers against muted beige sands. Gentle waves wash over the shore, and their relaxed postures suggest peaceful coexistence." },
+            { url: "assets/dt2v/6.mp4", prompt: "A juvenile swan with grey and white plumage is seen engaging in playful behavior in a tranquil pond.", desc: "The swan's actions are highlighted by gentle ripples. As time passes, another swan appears in the background. Eventually, a group of juvenile swans is shown against a backdrop of lush greenery." },
+            { url: "assets/dt2v/7.mp4", prompt: "A tiger stands in stark contrast against the darkness, its silhouette and striped fur highlighted by soft light.", desc: "The tiger's gaze is consistently directed off-camera, suggesting a silent vigilance. The dramatic interplay of light and shadow accentuates its solitary form, evoking a sense of the wild's enigmatic allure." },
+            { url: "assets/dt2v/9.mp4", prompt: "A majestic elephant with large tusks and wrinkled grey skin is captured in a natural setting.", desc: "The elephant's massive size and textured skin are highlighted against a clear sky. As it moves slowly, its trunk sways gently and ears flap occasionally, showcasing a calm demeanor." }
+        ];
 
-  </body>
-  </html>
+        function renderVideos(list, pathPrefix = "") {
+            const feed = document.getElementById('video-feed');
+            feed.innerHTML = '';
+            if (list.length === 0) {
+                feed.innerHTML = `<div class="py-24 text-center border-2 border-dashed border-slate-200 rounded-[3rem] text-slate-400 italic font-medium">Coming Soon: Static Scene (T2V) results are being prepared.</div>`;
+                return;
+            }
+            list.forEach((v, i) => {
+                const card = document.createElement('div');
+                card.className = 'video-card p-8 md:p-12 rounded-[3.5rem] overflow-hidden';
+                card.innerHTML = `
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="w-10 h-10 bg-slate-900 text-white rounded-full flex items-center justify-center font-black text-xs">${i + 1}</span>
+                        <div class="h-[1px] flex-1 bg-slate-100"></div>
+                        <span class="text-[10px] font-bold text-blue-600 uppercase tracking-widest">${v.url.includes('.mp4') && !v.url.includes('/') ? 'Text-to-Video' : 'Image-to-Video'} Comparison</span>
+                    </div>
+                    <video src="${pathPrefix}${v.url}" controls class="w-full rounded-2xl bg-black mb-10 shadow-xl"></video>
+                    <div class="space-y-6 px-2">
+                        <div class="bg-slate-50 p-6 rounded-2xl border-l-4 border-blue-500 italic">
+                            <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 italic">Prompt</h4>
+                            <p class="text-slate-800 font-bold leading-relaxed">${v.prompt}</p>
+                        </div>
+                        <div class="text-slate-600 leading-relaxed italic text-base md-analysis">
+                            ${marked.parse(v.desc)}
+                        </div>
+                    </div>
+                `;
+                feed.appendChild(card);
+            });
+        }
+
+        function switchCategory(cat) {
+            document.querySelectorAll('.tab-btn').forEach(b => {
+                b.classList.remove('tab-active');
+                b.classList.add('text-slate-500');
+            });
+            document.getElementById(`tab-${cat}`).classList.add('tab-active');
+            document.getElementById(`tab-${cat}`).classList.remove('text-slate-500');
+
+            if (cat === 'i2v') renderVideos(i2vData);
+            else if (cat === 't2v-dyn') renderVideos(t2vDynData, ""); // Use empty prefix for the provided assets
+            else renderVideos([]);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const abs = document.getElementById('md-abstract');
+            abs.innerHTML = marked.parse(abs.innerText);
+            const hero = document.getElementById('hero-desc');
+            hero.innerHTML = marked.parse(hero.innerText);
+            renderVideos(i2vData);
+        });
+
+        window.addEventListener('scroll', () => {
+            const btt = document.getElementById('back-to-top');
+            btt.classList.toggle('show', window.scrollY > 800);
+            
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.toc-link');
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 200;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+                if(top >= offset && top < offset + height) {
+                    navLinks.forEach(l => {
+                        l.classList.remove('toc-active');
+                        if(l.getAttribute('href').includes(id)) l.classList.add('toc-active');
+                    });
+                }
+            });
+        });
+
+        function copyBib() {
+            navigator.clipboard.writeText(document.getElementById('bib-code').innerText);
+            alert("BibTeX copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
