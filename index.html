@@ -34,7 +34,6 @@
                 <a href="#abstract" class="toc-link block py-1 text-sm text-slate-500 transition-all">Abstract</a>
                 <a href="#metrics" class="toc-link block py-1 text-sm text-slate-500 transition-all">Benchmarks</a>
                 <a href="#gallery" class="toc-link block py-1 text-sm text-slate-500 transition-all">Visual Gallery</a>
-                <a href="#usage" class="toc-link block py-1 text-sm text-slate-500 transition-all">Usage Guide</a>
                 <a href="https://github.com/Hongyang-Du/VideoGPA" target="_blank" class="hover:text-blue-600 transition"><i class="fab fa-github text-xl"></i></a>
             </div>
         </div>
@@ -87,7 +86,7 @@
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6 py-24">
+    <main class="max-w-[85%] mx-auto px-6 py-24">
 
         <section id="abstract" class="mb-40 scroll-mt-24">
             <div class="bg-white border border-slate-100 p-12 md:p-20 rounded-[3rem] shadow-sm relative overflow-hidden">
@@ -148,26 +147,14 @@
             <div class="text-center mb-20">
                 <h2 class="text-5xl font-extrabold text-slate-900 mb-8 tracking-tight italic">Result Gallery</h2>
                 <div class="inline-flex bg-slate-100 p-2 rounded-[1.5rem] border border-slate-200 overflow-x-auto max-w-full">
-                    <button onclick="switchCategory('i2v')" id="tab-i2v" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold tab-active">Dynamic Video (I2V)</button>
-                    <button onclick="switchCategory('t2v-dyn')" id="tab-t2v-dyn" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold text-slate-500">Dynamic Video (T2V)</button>
-                    <button onclick="switchCategory('t2v-static')" id="tab-t2v-static" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold text-slate-500">Static Scene (T2V)</button>
+                    <button onclick="switchCategory('i2v')" id="tab-i2v" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold tab-active">I2V</button>
+                    <button onclick="switchCategory('t2v-static')" id="tab-t2v-static" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold text-slate-500">T2V</button>
+                    <button onclick="switchCategory('t2v-dyn')" id="tab-t2v-dyn" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold text-slate-500">Dynamic Scene</button>
                 </div>
             </div>
 
             <div id="video-feed" class="space-y-24">
                 </div>
-        </section>
-
-        <section id="usage" class="mb-32 scroll-mt-24">
-            <h2 class="text-3xl font-bold mb-8 italic">Usage</h2>
-            <div class="bg-[#0d1117] rounded-3xl p-8 border border-slate-800 shadow-2xl group">
-                <pre class="text-blue-300 font-mono text-sm overflow-x-auto leading-relaxed">
-<span class="text-slate-500"># Run DPO training for T2V model</span>
-python train_dpo/CogVideoX-T2V-5B_lora/03_train.py
-
-<span class="text-slate-500"># Perform inference with LoRA adapter</span>
-python generate/t2v_inference.py "Prompt text" --lora_path checkpoints/VideoGPA-T2V-lora</pre>
-            </div>
         </section>
 
         <section id="bibtex" class="scroll-mt-24 mb-32 text-slate-500">
@@ -309,12 +296,12 @@ python generate/t2v_inference.py "Prompt text" --lora_path checkpoints/VideoGPA-
 
         // Data for T2V Dynamic Comparisons (New Animal Set)
         const t2vDynData = [
-            { url: "assets/dt2v/1.mp4", prompt: "A wasp with yellow and black markings is seen pollinating a dandelion flower amidst a lush meadow.", prompt: "The scene unfolds under the bright midday sun, highlighting the vivid colors and intricate details of the wasp and flower. As time passes, the wasp continues its pollination efforts, with the background of green grass and other dandelions softly blurred." },
-            { url: "assets/dt2v/4.mp4", prompt: "A vibrant red fox with a bushy tail and sharp features is captured mid-leap in a snowy forest.", prompt: "The fox's fur contrasts strikingly against the white snow. As the fox jumps gracefully, its agile movements are highlighted, showcasing its natural athleticism and adaptability." },
-            { url: "assets/dt2v/5.mp4", prompt: "Two seagulls are observed on a tranquil beach, engaging in various activities such as standing, walking, and foraging.", prompt: "The scene is serene, with seagulls' white and grey feathers against muted beige sands. Gentle waves wash over the shore, and their relaxed postures suggest peaceful coexistence." },
-            { url: "assets/dt2v/6.mp4", prompt: "A juvenile swan with grey and white plumage is seen engaging in playful behavior in a tranquil pond.", prompt: "The swan's actions are highlighted by gentle ripples. As time passes, another swan appears in the background. Eventually, a group of juvenile swans is shown against a backdrop of lush greenery." },
-            { url: "assets/dt2v/7.mp4", prompt: "A tiger stands in stark contrast against the darkness, its silhouette and striped fur highlighted by soft light.", prompt: "The tiger's gaze is consistently directed off-camera, suggesting a silent vigilance. The dramatic interplay of light and shadow accentuates its solitary form, evoking a sense of the wild's enigmatic allure." },
-            { url: "assets/dt2v/9.mp4", prompt: "A majestic elephant with large tusks and wrinkled grey skin is captured in a natural setting.", prompt: "The elephant's massive size and textured skin are highlighted against a clear sky. As it moves slowly, its trunk sways gently and ears flap occasionally, showcasing a calm demeanor." }
+            { url: "assets/dt2v/1.mp4", desc: '', prompt: "A wasp with yellow and black markings is seen pollinating a dandelion flower amidst a lush meadow.", prompt: "The scene unfolds under the bright midday sun, highlighting the vivid colors and intricate details of the wasp and flower. As time passes, the wasp continues its pollination efforts, with the background of green grass and other dandelions softly blurred." },
+            { url: "assets/dt2v/4.mp4", desc: '', prompt: "A vibrant red fox with a bushy tail and sharp features is captured mid-leap in a snowy forest.", prompt: "The fox's fur contrasts strikingly against the white snow. As the fox jumps gracefully, its agile movements are highlighted, showcasing its natural athleticism and adaptability." },
+            { url: "assets/dt2v/5.mp4", desc: '', prompt: "Two seagulls are observed on a tranquil beach, engaging in various activities such as standing, walking, and foraging.", prompt: "The scene is serene, with seagulls' white and grey feathers against muted beige sands. Gentle waves wash over the shore, and their relaxed postures suggest peaceful coexistence." },
+            { url: "assets/dt2v/6.mp4", desc: '', prompt: "A juvenile swan with grey and white plumage is seen engaging in playful behavior in a tranquil pond.", prompt: "The swan's actions are highlighted by gentle ripples. As time passes, another swan appears in the background. Eventually, a group of juvenile swans is shown against a backdrop of lush greenery." },
+            { url: "assets/dt2v/7.mp4", desc: '', prompt: "A tiger stands in stark contrast against the darkness, its silhouette and striped fur highlighted by soft light.", prompt: "The tiger's gaze is consistently directed off-camera, suggesting a silent vigilance. The dramatic interplay of light and shadow accentuates its solitary form, evoking a sense of the wild's enigmatic allure." },
+            { url: "assets/dt2v/9.mp4", desc: '', prompt: "A majestic elephant with large tusks and wrinkled grey skin is captured in a natural setting.", prompt: "The elephant's massive size and textured skin are highlighted against a clear sky. As it moves slowly, its trunk sways gently and ears flap occasionally, showcasing a calm demeanor." }
         ];
 
         const t2vStatData = [
@@ -352,7 +339,7 @@ python generate/t2v_inference.py "Prompt text" --lora_path checkpoints/VideoGPA-
                     <div class="space-y-6 px-2">
                         <div class="bg-slate-50 p-6 rounded-2xl border-l-4 border-blue-500 italic">
                             <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 italic">Prompt</h4>
-                            <p class="text-slate-800 font-bold leading-relaxed">${v.prompt}</p>
+                            <p class="text-slate-800 leading-relaxed">${v.prompt}</p>
                         </div>
                         <div class="text-slate-600 leading-relaxed italic text-base md-analysis">
                             ${marked.parse(v.desc)}
