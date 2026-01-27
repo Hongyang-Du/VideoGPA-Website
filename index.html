@@ -183,7 +183,7 @@
                 <div class="inline-flex bg-slate-100 p-2 rounded-[1.5rem] border border-slate-200 overflow-x-auto max-w-full">
                     <button onclick="switchCategory('i2v')" id="tab-i2v" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold tab-active">I2V</button>
                     <button onclick="switchCategory('t2v-static')" id="tab-t2v-static" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold text-slate-500">T2V</button>
-                    <button onclick="switchCategory('t2v-dyn')" id="tab-t2v-dyn" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold text-slate-500">Dynamic Scene(T2V)</button>
+                    <button onclick="switchCategory('t2v-dyn')" id="tab-t2v-dyn" class="tab-btn whitespace-nowrap px-6 py-3 rounded-xl text-sm font-bold text-slate-500">Dynamic Scene</button>
                 </div>
             </div>
 
@@ -326,12 +326,16 @@
         ];
 
         // Data for T2V Dynamic Comparisons (New Animal Set)
+
         const t2vDynData = [
             { url: "assets/dt2v/1.mp4", desc: '', prompt: "A wasp with yellow and black markings is seen pollinating a dandelion flower amidst a lush meadow.", prompt: "The scene unfolds under the bright midday sun, highlighting the vivid colors and intricate details of the wasp and flower. As time passes, the wasp continues its pollination efforts, with the background of green grass and other dandelions softly blurred." },
             { url: "assets/dt2v/4.mp4", desc: '', prompt: "A vibrant red fox with a bushy tail and sharp features is captured mid-leap in a snowy forest.", prompt: "The fox's fur contrasts strikingly against the white snow. As the fox jumps gracefully, its agile movements are highlighted, showcasing its natural athleticism and adaptability." },
             { url: "assets/dt2v/5.mp4", desc: '', prompt: "Two seagulls are observed on a tranquil beach, engaging in various activities such as standing, walking, and foraging.", prompt: "The scene is serene, with seagulls' white and grey feathers against muted beige sands. Gentle waves wash over the shore, and their relaxed postures suggest peaceful coexistence." },
             { url: "assets/dt2v/6.mp4", desc: '', prompt: "A juvenile swan with grey and white plumage is seen engaging in playful behavior in a tranquil pond.", prompt: "The swan's actions are highlighted by gentle ripples. As time passes, another swan appears in the background. Eventually, a group of juvenile swans is shown against a backdrop of lush greenery." },
             { url: "assets/dt2v/7.mp4", desc: '', prompt: "A tiger stands in stark contrast against the darkness, its silhouette and striped fur highlighted by soft light.", prompt: "The tiger's gaze is consistently directed off-camera, suggesting a silent vigilance. The dramatic interplay of light and shadow accentuates its solitary form, evoking a sense of the wild's enigmatic allure." },
+            { url: "assets/di2v/1.mp4", desc: '', prompt: "The video shows a dog walking directly toward the camera with a calm and steady gait. Its eyes are fixed forward, and its tail moves slightly, suggesting curiosity or familiarity. The setting is softly lit, with the dog’s approach gradually filling the frame and creating a sense of intimacy and engagement.", prompt: "The scene unfolds under the bright midday sun, highlighting the vivid colors and intricate details of the wasp and flower. As time passes, the wasp continues its pollination efforts, with the background of green grass and other dandelions softly blurred." },
+            { url: "assets/di2v/3.mp4", desc: '', prompt: "The video captures a white horse in mid-run, its hooves kicking up dust as it moves across a sun-drenched field. The flowing mane and tail add to the sense of movement, while the soft lighting and open landscape highlight the horse's form and motion.", prompt: "The fox's fur contrasts strikingly against the white snow. As the fox jumps gracefully, its agile movements are highlighted, showcasing its natural athleticism and adaptability." },
+       
         ];
 
         const t2vStatData = [
