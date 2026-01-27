@@ -39,17 +39,15 @@
         </div>
     </nav>
 
-    <header class="relative hero-bg text-white pt-64 pb-24 px-6 overflow-hidden">
+    <header class="relative hero-bg text-white pt-40 pb-24 px-6 overflow-hidden">
         <div class="absolute top-1/4 -left-20 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div class="relative max-w-5xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter italic bg-clip-text text-transparent bg-gradient-to-b from-white via-slate-200 to-slate-500">
-                VideoGPA
+            <h1 class="text-4xl md:text-6xl font-black mb-8 tracking-tighter italic text-white">
+                VideoGPA: Distilling Geometry Priors for 3D-Consistent Video Generation
             </h1>
-            <p id="hero-desc" class="text-2xl md:text-3xl text-blue-100/80 mb-14 font-light max-w-3xl mx-auto leading-tight tracking-tight">
-                Distilling Geometry Priors for **3D-Consistent** Video Generation
-            </p>
+
             
             <div class="max-w-4xl mx-auto mb-10">
                 <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-lg font-semibold text-slate-100">
@@ -93,14 +91,14 @@
                 <div class="absolute top-0 right-0 w-64 h-64 bg-blue-50 rounded-full -mr-24 -mt-24 blur-3xl opacity-60"></div>
                 <h2 class="text-xs font-bold text-blue-600 uppercase tracking-[0.4em] mb-10">Abstract</h2>
                 <div id="md-abstract" class="text-xl md:text-2xl text-slate-700 leading-relaxed font-medium italic">
-                    While recent **video diffusion models** (VDMs) produce visually impressive results, they fundamentally struggle to maintain 3D structural consistency, often resulting in object deformation or spatial drift. We hypothesize that these failures arise because standard denoising objectives lack explicit incentives for geometric coherence. To address this, we introduce **VideoGPA** (Video Geometric Preference Alignment), a data-efficient framework that leverages geometric preference pairs to guide VDMs via Direct Preference Optimization (**DPO**). To construct these pairs, we leverage priors from a geometry foundation model to formulate a novel 3D consistency metric, enabling the quantitative evaluation of generated videos. This approach effectively steers the generative distribution toward inherent 3D consistency without requiring human annotations. VideoGPA significantly enhances 3D consistency, temporal stability, and motion coherence using only **2,000** preference pairs, consistently outperforming state-of-the-art baselines in extensive experiments.
+                    While recent video diffusion models produce visually impressive results, they fundamentally struggle to maintain 3D structural consistency, often resulting in object deformation or spatial drift. We hypothesize that these failures arise because standard denoising objectives lack explicit incentives for geometric coherence. To address this, we introduce **VideoGPA**(**Video** **G**eometric **P**reference **A**lignment), a data-efficient self-supervised framework that leverages geometry foundation model to automatically derive dense preference signals to guide VDMs via Direct Preference Optimization. This approach effectively steers the generative distribution toward inherent 3D consistency without requiring human annotations. VideoGPA significantly enhances temporal stability, phyiscal plausibility, and motion coherence using minimal preference pairs, consistently outperforming state-of-the-art baselines in extensive experiments.
                 </div>
             </section>
         
         <section id="metrics" class="mb-40 scroll-mt-24">
             <div class="mb-12">
                 <h2 class="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Quantitative Benchmarks</h2>
-                <p class="text-slate-500">Comprehensive results on 3D Reconstruction Error, Consistency, and Win Rates.</p>
+                <p class="text-slate-500">Comprehensive results on 3D Reconstruction Error, 3D Geometric Consistency Metrics, and VideoReward Benchmark.</p>
             </div>
             
             <div class="bg-white rounded-[2.5rem] border border-slate-100 shadow-sm overflow-x-auto p-4">
