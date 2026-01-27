@@ -398,8 +398,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             const abs = document.getElementById('md-abstract');
             abs.innerHTML = marked.parse(abs.innerText);
-            const hero = document.getElementById('hero-desc');
-            hero.innerHTML = marked.parse(hero.innerText);
             renderVideos(i2vData);
         });
 
