@@ -135,9 +135,9 @@
                         </tr>
                         
                         <tr class="bg-slate-50/30 font-bold text-slate-400 border-t-2 border-slate-200"><td colspan="11" class="p-4 uppercase tracking-tighter italic">Text-to-Video (T2V) Tasks</td></tr>
-                        <tr><td class="p-4">Baseline-T2V</td><td class="p-2 text-center"><strong>17.69</strong></td><td class="p-2 text-center">0.618</td><td class="p-2 text-center">0.510</td><td class="p-2 text-center">0.971</td><td class="p-2 text-center">0.531</td><td class="p-2 text-center">0.586</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td></tr>
+                        <tr><td class="p-4">Baseline-T2V</td><td class="p-2 text-center">17.53</td><td class="p-2 text-center">0.614</td><td class="p-2 text-center">0.508</td><td class="p-2 text-center">0.967</td><td class="p-2 text-center">0.533</td><td class="p-2 text-center">0.584</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td></tr>
                         <tr><td class="p-4">SFT</td><td class="p-2 text-center">17.07</td><td class="p-2 text-center">0.573</td><td class="p-2 text-center">0.563</td><td class="p-2 text-center">0.968</td><td class="p-2 text-center">0.586</td><td class="p-2 text-center">0.719</td><td class="p-2 text-center">14.67</td><td class="p-2 text-center">23.67</td><td class="p-2 text-center">39.33</td><td class="p-2 text-center">15.33</td></tr>
-                        <tr><td class="p-4">Epipolar-DPO</td><td class="p-2 text-center">17.60</td><td class="p-2 text-center">0.618</td><td class="p-2 text-center">0.511</td><td class="p-2 text-center">0.971</td><td class="p-2 text-center">0.531</td><td class="p-2 text-center">0.585</td><td class="p-2 text-center">32.67</td><td class="p-2 text-center">33.67</td><td class="p-2 text-center">33.33</td><td class="p-2 text-center">33.33</td></tr>
+                        <tr><td class="p-4">Epipolar-DPO</td><td class="p-2 text-center"><strong>17.69</strong></td><td class="p-2 text-center">0.618</td><td class="p-2 text-center">0.507</td><td class="p-2 text-center">0.971</td><td class="p-2 text-center">0.528</td><td class="p-2 text-center">0.579</td><td class="p-2 text-center">45.00</td><td class="p-2 text-center">53.67</td><td class="p-2 text-center">49.00</td><td class="p-2 text-center">48.67</td></tr>
                         <tr class="text-blue-600 bg-blue-50/20">
                             <td class="p-4 font-black italic underline text-blue-800">VideoGPA (Ours)</td>
                             <td class="p-2 text-center">17.31</td> <td class="p-2 text-center"><strong>0.621</strong></td>
@@ -147,7 +147,7 @@
                             <td class="p-2 text-center"><strong>0.548</strong></td>
                             <td class="p-2 text-center"><strong>62.67</strong></td>
                             <td class="p-2 text-center"><strong>67.00</strong></td>
-                            <td class="p-2 text-center"><strong>42.67</strong></td>
+                            <td class="p-2 text-center">42.67</td>
                             <td class="p-2 text-center"><strong>60.33</strong></td>
                         </tr>
                         
@@ -326,20 +326,20 @@
         // Data for T2V Dynamic Comparisons (New Animal Set)
 
         const DynData = [
-            { url: "assets/dt2v15/1.mp4", desc: '', prompt: "A wasp with yellow and black markings is seen pollinating a dandelion flower amidst a lush meadow." },
-            { url: "assets/dt2v15/4.mp4", desc: '', prompt: "A vibrant red fox with a bushy tail and sharp features is captured mid-leap in a snowy forest." },
-            { url: "assets/dt2v15/5.mp4", desc: '', prompt: "Two seagulls are observed on a tranquil beach, engaging in various activities such as standing, walking, and foraging." },
-            { url: "assets/dt2v15/6.mp4", desc: '', prompt: "A juvenile swan with grey and white plumage is seen engaging in playful behavior in a tranquil pond." },
-            { url: "assets/dt2v15/7.mp4", desc: '', prompt: "A tiger stands in stark contrast against the darkness, its silhouette and striped fur highlighted by soft light." },
-
+            { url: "assets/di2v/1.mp4", desc: '', prompt: "The video shows a dog walking directly toward the camera with a calm and steady gait. Its eyes are fixed forward, and its tail moves slightly, suggesting curiosity or familiarity. The setting is softly lit, with the dog's approach gradually filling the frame and creating a sense of intimacy and engagement." },
+            { url: "assets/di2v/3.mp4", desc: '', prompt: "The video captures a white horse in mid-run, its hooves kicking up dust as it moves across a sun-drenched field. The flowing mane and tail add to the sense of movement, while the soft lighting and open landscape highlight the horse's form and motion." },
+            
             { url: "assets/dt2v/4.mp4", desc: '', prompt: " A vibrant red fox with a bushy tail and sharp features is captured mid-leap in a snowy forest. The fox's fur contrasts strikingly against the white snow, while the surrounding trees, bare of leaves, create a stark and wintry backdrop. As the fox jumps gracefully, its agile movements are highlighted, showcasing its natural athleticism and adaptability to the cold environment. The scene conveys a sense of energy and vitality, with the fox's focused expression and dynamic pose emphasizing its role as a skilled hunter in the wilderness. The overall atmosphere is one of crispness and liveliness amidst the winter landscape." },
             { url: "assets/dt2v/6.mp4", desc: '', prompt: "A juvenile swan with grey and white plumage is seen engaging in playful behavior in a tranquil pond, repeatedly dipping its beak and feet into the water. The swan's actions are highlighted by the gentle ripples on the water's surface and the soft lighting, which enhances the serene atmosphere. As time passes, another swan, possibly an adult, appears in the background, observing the young swan's antics. Eventually, a group of juvenile swans is shown, with one engaging in playful behavior while another watches, against a backdrop of lush greenery, suggesting a peaceful, natural habitat. " },
             { url: "assets/dt2v/8.mp4", desc: '', prompt: " A group of penguins is seen navigating a rocky shoreline, engaging in various activities such as standing, walking, and interacting with each other. The penguins' black and white plumage contrasts against the rugged, grey rocks and the soft blue hues of the surrounding water. The scene captures the penguins' social behavior and their adaptation to the harsh coastal environment. As they move about, the lighting suggests a cool, overcast day, enhancing the natural ambiance of their habitat. The overall mood is one of camaraderie and resilience among these seabirds in their challenging surroundings." },
             { url: "assets/dt2v/9.mp4", desc: '', prompt: " A majestic elephant with large tusks and wrinkled grey skin is captured in a natural setting, surrounded by sparse vegetation and a few trees. The elephant's massive size and textured skin are highlighted against the backdrop of a clear sky, suggesting a warm, sunny day. As the elephant moves slowly, its trunk sways gently, and its ears flap occasionally, showcasing its calm demeanor. The scene conveys a sense of tranquility and the elephant's harmonious existence within its environment. The overall atmosphere is one of peacefulness and respect for this gentle giant of the wild." },
             
-            { url: "assets/di2v/1.mp4", desc: '', prompt: "The video shows a dog walking directly toward the camera with a calm and steady gait. Its eyes are fixed forward, and its tail moves slightly, suggesting curiosity or familiarity. The setting is softly lit, with the dog's approach gradually filling the frame and creating a sense of intimacy and engagement." },
-            { url: "assets/di2v/3.mp4", desc: '', prompt: "The video captures a white horse in mid-run, its hooves kicking up dust as it moves across a sun-drenched field. The flowing mane and tail add to the sense of movement, while the soft lighting and open landscape highlight the horse's form and motion." },
-
+            { url: "assets/dt2v15/1.mp4", desc: '', prompt: "A wasp with yellow and black markings is seen pollinating a dandelion flower amidst a lush meadow." },
+            { url: "assets/dt2v15/4.mp4", desc: '', prompt: "A vibrant red fox with a bushy tail and sharp features is captured mid-leap in a snowy forest." },
+            { url: "assets/dt2v15/5.mp4", desc: '', prompt: "Two seagulls are observed on a tranquil beach, engaging in various activities such as standing, walking, and foraging." },
+            { url: "assets/dt2v15/6.mp4", desc: '', prompt: "A juvenile swan with grey and white plumage is seen engaging in playful behavior in a tranquil pond." },
+            { url: "assets/dt2v15/7.mp4", desc: '', prompt: "A tiger stands in stark contrast against the darkness, its silhouette and striped fur highlighted by soft light." },
+          
         ];
 
         const t2vStatData = [
