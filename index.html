@@ -32,7 +32,6 @@
             </a>
             <div class="hidden md:flex space-x-6 text-sm font-bold uppercase tracking-widest text-slate-400">
                 <a href="#abstract" class="toc-link block py-1 text-sm text-slate-500 transition-all">Abstract</a>
-                <a href="#metrics" class="toc-link block py-1 text-sm text-slate-500 transition-all">Benchmarks</a>
                 <a href="#gallery" class="toc-link block py-1 text-sm text-slate-500 transition-all">Visual Gallery</a>
                 <a href="#bibtex" class="toc-link block py-1 text-sm text-slate-500 transition-all">Citation</a>
                 <a href="https://github.com/Hongyang-Du/VideoGPA" target="_blank" class="hover:text-blue-600 transition"><i class="fab fa-github text-xl"></i></a>
@@ -97,86 +96,6 @@
 
                 <div class="mt-12 flex justify-center">
                     <img src="assets/pipeline.png" alt="VideoGPA Pipeline" class="rounded-2xl shadow-lg" style="width: 75%;">
-                </div>
-            </div>
-        </section>
-        
-        <section id="metrics" class="mb-40 scroll-mt-24 mx-auto max-w-5xl">
-            <div class="mb-12">
-                <h2 class="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Quantitative Benchmarks</h2>
-                <p class="text-slate-500">Comprehensive results on 3D Reconstruction Error, 3D Geometric Consistency Metrics, and VideoReward Benchmark.</p>
-            </div>
-            
-            <div class="bg-white rounded-[2.5rem] border border-slate-100 shadow-sm overflow-x-auto p-4">
-                <table class="w-full text-left text-xs md:text-sm border-collapse">
-                    <thead>
-                        <tr class="bg-slate-50 border-b border-slate-100 uppercase tracking-widest font-bold text-slate-500">
-                            <th class="p-4" rowspan="2">Method</th>
-                            <th class="p-4 text-center border-l border-slate-200" colspan="3">3D Reconstruction Error</th>
-                            <th class="p-4 text-center border-l border-slate-200" colspan="3">3D Consistency</th>
-                            <th class="p-4 text-center border-l border-slate-200" colspan="4">VideoReward (Win Rate %)</th>
-                        </tr>
-                        <tr class="bg-slate-50 border-b border-slate-100 text-[10px] text-slate-400">
-                            <th class="p-2 text-center border-l border-slate-200">PSNR ↑</th><th class="p-2 text-center">SSIM ↑</th><th class="p-2 text-center">LPIPS ↓</th>
-                            <th class="p-2 text-center border-l border-slate-200">MVCS ↑</th><th class="p-2 text-center">3DCS ↓</th><th class="p-2 text-center">Epipolar ↓</th>
-                            <th class="p-2 text-center border-l border-slate-200">VQ</th><th class="p-2 text-center">MQ</th><th class="p-2 text-center">TA</th><th class="p-2 text-center">OVL</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-50">
-                        <tr class="bg-slate-50/30 font-bold text-slate-400"><td colspan="11" class="p-4 uppercase tracking-tighter italic">Image-to-Video (I2V) Tasks</td></tr>
-                        <tr><td class="p-4">Baseline-I2V</td><td class="p-2 text-center">14.57</td><td class="p-2 text-center">0.455</td><td class="p-2 text-center">0.653</td><td class="p-2 text-center">0.976</td><td class="p-2 text-center">0.687</td><td class="p-2 text-center">0.706</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td></tr>
-                        <tr><td class="p-4">SFT</td><td class="p-2 text-center"><strong>15.23</strong></td><td class="p-2 text-center">0.509</td><td class="p-2 text-center">0.639</td><td class="p-2 text-center">0.982</td><td class="p-2 text-center">0.665</td><td class="p-2 text-center">0.628</td><td class="p-2 text-center">44.67</td><td class="p-2 text-center">33.00</td><td class="p-2 text-center">52.67</td><td class="p-2 text-center">35.00</td></tr>
-                        <tr><td class="p-4">Epipolar-DPO</td><td class="p-2 text-center">15.07</td><td class="p-2 text-center">0.479</td><td class="p-2 text-center">0.615</td><td class="p-2 text-center">0.984</td><td class="p-2 text-center">0.646</td><td class="p-2 text-center">0.571</td><td class="p-2 text-center">67.33</td><td class="p-2 text-center">51.33</td><td class="p-2 text-center">56.67</td><td class="p-2 text-center">66.00</td></tr>
-                        <tr class="text-blue-600 bg-blue-50/20">
-                            <td class="p-4 font-black italic underline text-blue-800">VideoGPA (Ours)</td>
-                            <td class="p-2 text-center">15.19</td> <td class="p-2 text-center"><strong>0.510</strong></td>
-                            <td class="p-2 text-center"><strong>0.608</strong></td>
-                            <td class="p-2 text-center"><strong>0.986</strong></td>
-                            <td class="p-2 text-center"><strong>0.638</strong></td>
-                            <td class="p-2 text-center"><strong>0.564</strong></td>
-                            <td class="p-2 text-center"><strong>74.00</strong></td>
-                            <td class="p-2 text-center"><strong>56.00</strong></td>
-                            <td class="p-2 text-center"><strong>57.67</strong></td>
-                            <td class="p-2 text-center"><strong>76.00</strong></td>
-                        </tr>
-                        
-                        <tr class="bg-slate-50/30 font-bold text-slate-400 border-t-2 border-slate-200"><td colspan="11" class="p-4 uppercase tracking-tighter italic">Text-to-Video (T2V) Tasks</td></tr>
-                        <tr><td class="p-4">Baseline-T2V</td><td class="p-2 text-center">17.53</td><td class="p-2 text-center">0.614</td><td class="p-2 text-center">0.508</td><td class="p-2 text-center">0.967</td><td class="p-2 text-center">0.533</td><td class="p-2 text-center">0.584</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td></tr>
-                        <tr><td class="p-4">SFT</td><td class="p-2 text-center">17.07</td><td class="p-2 text-center">0.573</td><td class="p-2 text-center">0.563</td><td class="p-2 text-center">0.968</td><td class="p-2 text-center">0.586</td><td class="p-2 text-center">0.719</td><td class="p-2 text-center">14.67</td><td class="p-2 text-center">23.67</td><td class="p-2 text-center">39.33</td><td class="p-2 text-center">15.33</td></tr>
-                        <tr><td class="p-4">Epipolar-DPO</td><td class="p-2 text-center"><strong>17.69</strong></td><td class="p-2 text-center">0.618</td><td class="p-2 text-center">0.507</td><td class="p-2 text-center">0.971</td><td class="p-2 text-center">0.528</td><td class="p-2 text-center">0.579</td><td class="p-2 text-center">45.00</td><td class="p-2 text-center">53.67</td><td class="p-2 text-center">49.00</td><td class="p-2 text-center">48.67</td></tr>
-                        <tr class="text-blue-600 bg-blue-50/20">
-                            <td class="p-4 font-black italic underline text-blue-800">VideoGPA (Ours)</td>
-                            <td class="p-2 text-center">17.31</td> <td class="p-2 text-center"><strong>0.621</strong></td>
-                            <td class="p-2 text-center"><strong>0.495</strong></td>
-                            <td class="p-2 text-center"><strong>0.974</strong></td>
-                            <td class="p-2 text-center"><strong>0.519</strong></td>
-                            <td class="p-2 text-center"><strong>0.548</strong></td>
-                            <td class="p-2 text-center"><strong>62.67</strong></td>
-                            <td class="p-2 text-center"><strong>67.00</strong></td>
-                            <td class="p-2 text-center">42.67</td>
-                            <td class="p-2 text-center"><strong>60.33</strong></td>
-                        </tr>
-                        
-                        <tr class="bg-slate-50/30 font-bold text-slate-400 border-t-2 border-slate-200"><td colspan="11" class="p-4 uppercase tracking-tighter italic">Comparison with State-of-the-Art</td></tr>
-                        <tr><td class="p-4">Baseline-T2V15</td><td class="p-2 text-center">15.57</td><td class="p-2 text-center">0.480</td><td class="p-2 text-center">0.555</td><td class="p-2 text-center">0.976</td><td class="p-2 text-center">0.588</td><td class="p-2 text-center">0.685</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td><td class="p-2 text-center">-</td></tr>
-                        <tr><td class="p-4">GeoVideo</td><td class="p-2 text-center"><strong>15.90</strong></td><td class="p-2 text-center"><strong><strong>0.510</strong></strong></td><td class="p-2 text-center">0.643</td><td class="p-2 text-center">0.852</td><td class="p-2 text-center">0.673</td><td class="p-2 text-center">0.840</td><td class="p-2 text-center">17.36</td><td class="p-2 text-center">44.44</td><td class="p-2 text-center">30.56</td><td class="p-2 text-center">18.06</td></tr>
-                        <tr class="text-blue-600 bg-blue-50/20">
-                            <td class="p-4 font-black italic underline text-blue-800">VideoGPA (Ours)</td>
-                            <td class="p-2 text-center">14.88</td>
-                            <td class="p-2 text-center">0.503</td>
-                            <td class="p-2 text-center"><strong>0.520</strong></td>
-                            <td class="p-2 text-center"><strong>0.982</strong></td>
-                            <td class="p-2 text-center"><strong>0.556</strong></td>
-                            <td class="p-2 text-center"><strong>0.567</strong></td>
-                            <td class="p-2 text-center"><strong>60.42</strong></td>
-                            <td class="p-2 text-center"><strong>54.17</strong></td>
-                            <td class="p-2 text-center"><strong>52.08</strong></td>
-                            <td class="p-2 text-center"><strong>57.64</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="mt-4 p-4 text-[10px] text-slate-400 italic">
-                    Note: 3DCS denotes our proposed 3D Consistency Score. VQ, MQ, TA, and OVL represent Visual Quality, Motion Quality, Text Alignment, and Overall, respectively. Filtered static videos as Training Stage.
                 </div>
             </div>
         </section>
